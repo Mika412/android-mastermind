@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <View
+        android:id="@+id/cicleOne"
+        android:layout_width="@dimen/circleSize"
+        android:layout_height="@dimen/circleSize"
+        android:layout_margin="@dimen/circlePadding"
+        android:color="@color/white"
+        android:background="@drawable/circle"
+        android:gravity="center"
+        tools:text="4"/>
+    <View
+        android:id="@+id/cicleTwo"
+        android:layout_width="@dimen/circleSize"
+        android:layout_height="@dimen/circleSize"
+        android:layout_margin="@dimen/circlePadding"
+        android:layout_toRightOf="@id/cicleOne"
+        android:background="@drawable/circle"
+        android:gravity="center"
+
+        tools:text="8"/>
+    <View
+        android:id="@+id/cicleThree"
+        android:layout_width="@dimen/circleSize"
+        android:layout_height="@dimen/circleSize"
+        android:layout_margin="@dimen/circlePadding"
+        android:layout_toRightOf="@id/cicleTwo"
+        android:background="@drawable/circle"
+        android:gravity="center"
+        tools:text="6"/>
+    <View
+        android:id="@+id/cicleFour"
+        android:layout_width="@dimen/circleSize"
+        android:layout_height="@dimen/circleSize"
+        android:layout_margin="@dimen/circlePadding"
+        android:layout_toRightOf="@id/cicleThree"
+        android:background="@drawable/circle"
+        android:gravity="center"/>
+    <View
+        android:id="@+id/separator"
+        android:layout_width="2dp"
+        android:layout_height="60dp"
+        android:layout_margin="@dimen/circlePadding"
+        android:background="@color/colorSeparator"
+        android:layout_toRightOf="@id/cicleFour" />
+
+    <android.support.v7.widget.GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/separator"
+        android:layout_margin="@dimen/circlePadding"
+        android:layout_alignBottom="@id/cicleOne"
+        app:columnCount="2"
+        app:rowCount="2"
+        app:orientation="horizontal">
+        <View
+            android:id="@+id/miniCircleOne"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/circle"
+            app:layout_gravity="left|top"/>
+
+        <View
+            android:id="@+id/miniCircleTwo"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/circle"
+            app:layout_gravity="right|top"/>
+
+        <View
+            android:id="@+id/miniCircleThree"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/circle"
+            app:layout_gravity="left|bottom"/>
+
+        <View
+            android:id="@+id/miniCircleFour"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/circle"
+            app:layout_gravity="right|bottom"/>
+        </android.support.v7.widget.GridLayout>
+    <TextView
+        android:id="@+id/won"
+        android:text="Won"
+        android:textSize="@dimen/wonTextSize"
+        android:textColor="@color/colorWon"
+        android:layout_width="@dimen/circleSize"
+        android:layout_height="@dimen/circleSize"
+        android:layout_margin="@dimen/circlePadding"
+        android:layout_toRightOf="@id/separator"
+        android:gravity="center"
+        tools:text="Won"/>
+</RelativeLayout>

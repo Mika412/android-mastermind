@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="circleSize">60dp</dimen>
+    <dimen name="circlePadding">8dp</dimen>
+    <dimen name="circleChooseSize">40dp</dimen>
+    <dimen name="wonTextSize">20dp</dimen>
+    <dimen name="circleChooseMarginSides">20dp</dimen>
+    <dimen name="smallCircle">4dp</dimen>
+    <dimen name="smallCirclePadding">4dp</dimen>
+    <dimen name="cicleTextSize">30dp</dimen>
+</resources>
