@@ -225,8 +225,6 @@ public class GuessingComputer extends AppCompatActivity {
         colors.add(R.color.pink);
         colors.add(R.color.blue);
         colors.add(R.color.red);
-        colors.add(R.color.orange);
         colors.add(R.color.yellow);
-        colors.add(R.color.black);
     }
 }
